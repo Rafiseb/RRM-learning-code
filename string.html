@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>    
+<body>
+
+<h2>Write a function called lengths that takes in a list of strings and returns a list of the
+
+lengths of the strings. If we pass it [Ed, Ted, Fred, Jennifer], it will return [2, 3, 4, 8].
+
+Use this function, along with the average function from the previous program and the
+
+cleanedup function, to write a program that accepts sentences from the user and
+
+reports the average length of the words in the sentence. 
+<br></br>
+def cleanedup(s):
+<br></br>
+alphabet = abcdefghijklmnopqrstuvwxyz
+<br></br>
+cleantext = ()
+<br></br>
+for character in s.lower():
+<br></br>
+if character in alphabet:
+<br></br>
+cleantext += character
+<br></br>
+else:
+<br></br>
+cleantext += {}
+<br></br>
+return cleantext
+<br></br>
+concordance = {}
+<br></br>
+with open(pap.txt) as book:
+<br></br>
+linenum = 1
+<br></br>
+for line in book:
+<br></br>
+for word in cleanedup(line).split():
+<br></br>
+if word in concordance:
+<br></br>
+concordance[word].append(linenum)
+<br></br>
+else:
+<br></br>
+concordance[word]=[linenum]
+<br></br>
+linenum += 1
+<br></br>
+while True:
+<br></br>
+word = input(Enter word: )
+<br></br>
+if word in concordance:
+<br></br>
+print(Found on lines:, concordance[word])
+<br></br>
+else:
+<br></br>
+print(Not found.)
+<br></br>
+<br></br>
+<br></br>
+***Indentations not provided***
+</h2>
+<br></br?
+<h2></h2>
+
+
+</body>
+</html>
